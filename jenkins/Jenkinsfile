@@ -24,15 +24,5 @@ pipeline {
                 bat '"D:\\Git\\bin\\bash.exe" -lc "./jenkins/scripts/deliver.sh"'
             }
         }
-        stage('Complete') {
-            steps {
-                echo 'Job Complete!'
-            }
-        }
-        stage ('Poll SCM'){
-            steps{
-                echo 'Testing SCM'
-            }
-        }
     }
 }
